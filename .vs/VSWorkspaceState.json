@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\renderer",
+    "\\renderer\\public",
+    "\\renderer\\src",
+    "\\renderer\\src\\web",
+    "\\renderer\\src\\web\\background",
+    "\\renderer\\src\\web\\item-check",
+    "\\renderer\\src\\web\\map-check"
   ],
+  "SelectedNode": "\\renderer\\src\\web\\item-check\\ItemInfo.vue",
   "PreviewInSolutionExplorer": false
 }
