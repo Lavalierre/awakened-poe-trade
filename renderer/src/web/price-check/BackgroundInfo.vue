@@ -20,11 +20,11 @@ import { defineComponent, computed, inject } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useLeagues } from '@/web/background/Leagues'
 import { Host } from '@/web/background/IPC'
-//import { poeWebApi } from '@/web/Config'
+import { poeWebApi } from '@/web/Config'
 
 export default defineComponent({
   setup () {
-    //const showBrowser = inject<(url: string) => void>('builtin-browser')!
+    const showBrowser = inject<(url: string) => void>('builtin-browser')!
 
     const { t } = useI18n()
 
@@ -52,8 +52,8 @@ export default defineComponent({
       retry () {
         leagues.load()
       },
-      openCaptcha() {
-        leagues.load()
+        openCaptcha() {
+            leagues.load()
       }
     }
   }
