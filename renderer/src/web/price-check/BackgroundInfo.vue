@@ -50,10 +50,10 @@ export default defineComponent({
       leaguesError: leagues.error,
       loadingLeagues: leagues.isLoading,
       retry () {
-        leagues.load()
+        showBrowser(`https://${poeWebApi()}/api/leagues?type=main&realm=pc&compact=1`)
       },
       openCaptcha () {
-        showBrowser(`https://${poeWebApi()}/api/leagues?type=main&realm=pc&compact=1`)
+        leagues.load()
       }
     }
   }
