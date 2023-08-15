@@ -53,7 +53,7 @@ export default defineComponent({
         leagues.load()
       },
       openCaptcha () {
-        showBrowser(`https://${poeWebApi()}/api/leagues?type=main&realm=pc&compact=1`)
+        showBrowser(`https://pathofexile.com/api/leagues?type=main&realm=pc&compact=1`)
       }
     }
   }
