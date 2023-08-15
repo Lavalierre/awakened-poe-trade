@@ -52,8 +52,8 @@ export default defineComponent({
       retry () {
         leagues.load()
       },
-        openCaptcha() {
-            leagues.load()
+      openCaptcha () {
+        showBrowser(`https://${poeWebApi()}/api/leagues?type=main&realm=pc&compact=1`)
       }
     }
   }
