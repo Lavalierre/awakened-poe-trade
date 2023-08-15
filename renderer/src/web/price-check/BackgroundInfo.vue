@@ -52,8 +52,9 @@ export default defineComponent({
       retry () {
         leagues.load()
       },
-      openCaptcha () {
-        showBrowser(`https://pathofexile.com/api/leagues?type=main&realm=pc&compact=1`)
+        openCaptcha() {
+            window.open("https://pathofexile.com/api/leagues?type=main&realm=pc&compact=1", "_blank");
+        //showBrowser(`https://pathofexile.com/api/leagues?type=main&realm=pc&compact=1`)
       }
     }
   }
